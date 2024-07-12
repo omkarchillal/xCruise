@@ -1,0 +1,353 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 51);
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/hero-cruise.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(248, 104, 8);
+    border: none;
+    cursor: pointer;
+}
+
+.hero button:hover{
+    background-color: rgb(255, 128, 44);
+}
+
+.discover{
+    padding: 40px 20px;
+}
+
+.heading h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.heading p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.popular{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    gap: 20px;
+}
+
+.pills{
+    display: flex;
+    margin-right: 20px;
+    gap: 20px;
+}
+
+.pill {
+    height: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    cursor: pointer;
+}
+
+.pill img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.pill span{
+    height: 15px;
+}
+
+.banner {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    filter: brightness(0.8);
+}
+
+.banner span{
+    position: relative;
+    bottom: 50px;
+    left: -40%;
+    color:white;
+    padding: 5px 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.7);
+}
+
+.card span {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    color:white;
+    padding: 5px 10px;
+}
+#contact {
+    padding: 40px 20px;
+}
+
+#contact h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+
+.contact_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_div {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+.contact_div h4 {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_div p {
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    background-color: #000033;
+}
+
+.main-footer{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-footer h4{
+    margin-bottom: 10px;
+    margin-top: 40px;
+    color: rgb(248, 104, 8);
+    cursor: pointer;
+}
+
+.main-footer p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.social-icons img{
+    height: 20px;
+    cursor: pointer;
+}
+
+.social-icons img:hover{
+    height: 25px;
+}
+
+.footer_rights{
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-top: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+
+/* to make design responsive*/
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .menu a {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero button {
+        font-size: 0.9rem;
+    }
+
+    .heading h2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .popular{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact_info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact_div {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .main-footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-footer h4{
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-footer p{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-icons{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px 10px;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero button {
+        font-size: 0.8rem;
+    }
+
+    .popular{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
